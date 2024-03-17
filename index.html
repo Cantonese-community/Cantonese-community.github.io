@@ -7,26 +7,72 @@
 		<link rel="stylesheet" href="style/style.css">
 	</head>
 	<body>
-		<div style="max-width: 42em; margin: 0; padding: 0;">
-			<img style="width: 10em;" src="img/logo.jpg">
-			<pre>
+		<div style="display: flex;">
+			<div style="max-width: 42em; margin: 0; padding: 0;">
+				<div style="display: flex;">
+					<img class="logo" src="img/logo.jpg">
+					<p style="margin-left: 20px; margin-top: 30px;">
+						粵語編程語言係乜? <br>佢係一門用粵語嚟同計算機溝通嘅編程語言<br>
+						喺呢隻语言度，計算機可以讀明你寫嘅粵語<br>所以話，你可以用粵語嚟操作(虐待)計算機。
+					</p>
+				</div>
+				<h4>⚡一種簡單嘅語言</h4>
+				<ul>
+					<li>只要你識啲啲廣東話, 咁就可以直接上手coding</li>
+					<li>編譯器會提供智能嘅報錯訊息, 喺編譯時期幫你排除bug</li>
+				</ul>
+
+				<h4>⚡主要用途</h4>
+				<ul>
+					<li>方便地與Python互相調用, 為Python編寫擴展庫</li>
+					<li>必要時可開啓靜態編譯(llvm), 編寫高性能嘅程式</li>
+				</ul>
+
+				<h4>⚡點樣安裝?</h4>
+				<code>
+					pip install cantonese
+				</code>
+				<h4>⚡源代碼</h4>
+				<a href="https://github.com/StepfenShawn/Cantonese/">https://github.com/StepfenShawn/Cantonese/</a>
+				<h4>⚡作者主頁</h4>
+				<a href="https://stepfenshawn.github.io/">https://stepfenshawn.github.io/</a>
+			</div>
+
+			<div style="margin-left: 150px;">
+				<pre>
    ______            __                           
   / ________ _____  / /_____  ____  ___  ________ 
  / /   / __ `/ __ \/ __/ __ \/ __ \/ _ \/ ___/ _ \
 / /___/ /_/ / / / / /_/ /_/ / / / /  __(__  /  __/
 \____/\__,_/_/ /_/\__/\____/_/ /_/\___/____/\___/
-			</pre>
-			<br>
-			粤语编程语言系咩? 佢系一门用粤语嚟同计算机沟通嘅编程语言。喺呢个语言度，计算机可以读明你写嘅粤语。所以话，你可以用粤语嚟操作(虐待)计算机。	
-			  
-			<h4>點樣安裝?</h4>
-			<code>
-				pip install cantonese
-			</code>
-			<h4>源代碼</h4>
-			<a href="https://github.com/StepfenShawn/Cantonese/">https://github.com/StepfenShawn/Cantonese/</a>
-			<h4>作者主頁</h4>
-			<a href="https://stepfenshawn.github.io/">https://stepfenshawn.github.io/</a>
+
+Cantonese PL Copyright (C) 2020-2024 StepfenShawn
+
+				</pre>
+				<h4>⚡示例</h4>
+				<pre><code style="display: block;">
+介紹返 duck 係 乜X {
+	佢個老豆叫 |object|
+	佢嘅 |性别| 係 "公"
+	佢識得 |游下水| => {
+		畀我睇下 "Duck is swimming" 點樣先？
+	}
+	佢識得 |睡下觉| => {
+		畀我睇下 "Duck is sleeping" 點樣先？
+	}
+}
+
+介紹返 myduck 係 阿->duck
+好心 |myduck -> 游下水| 啦!
+好心 |myduck -> 睡下觉| 啦!
+				</code></pre>
+				
+				<pre><code style="display: block;">
+$ cantonese example.cantonese
+Duck is swimming
+Duck is sleeping
+				</code></pre>
+			</div>
 		</div>
 	</body>
 </html>

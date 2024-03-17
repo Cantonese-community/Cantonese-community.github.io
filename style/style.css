@@ -1,3 +1,10 @@
+.logo {
+    width: 10em;
+}
+
+body {
+    background: white;
+}
 header{
     background:white;
     color:white;
@@ -7,16 +14,6 @@ header{
     background-repeat: no-repeat;
 }
 
-ul{
-    list-style-type:none; 
-}
-li{
-    display: inline-block;
-    margin-left: 100px;
-}
-li:hover{
-    transform: scale(1.4);
-}
 section{
     margin-top: auto;
     padding: 40px;
