@@ -3,8 +3,16 @@
 }
 
 body {
-    background: white;
+    color: #ccc;
+    background-color: #1f1f1f;
 }
+@media (prefers-color-scheme: light) {
+    body {
+        color: #333;
+        background-color: #eee;
+    }
+}
+
 header{
     background:white;
     color:white;
